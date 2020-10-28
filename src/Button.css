@@ -1,0 +1,35 @@
+button {
+  color: #00cdac;
+  font-weight: bold;
+  border: 3px solid transparent;
+  border-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+  border-image-slice: 1;
+  border-radius: 0px;
+  font-size: 30px !important;
+  padding: 5px 25px 5px 20px;
+  text-decoration: none;
+  font-weight: 700 !important;
+  background-image: linear-gradient(to right, #02aab0 25%, #00cdac 50%, #E8E3E7 0%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+button:hover {
+  color: white;
+  transition: 0.5s;
+  border-color: #00cdac;
+  background-position: left bottom;
+}
+
+button:focus{
+  outline: none;
+}
+
+/*button a:hover {
+  text-decoration: none !important;
+}
+
+button a {
+  text-decoration: none !important;
+}*/
