@@ -1,13 +1,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Particles from 'react-particles-js';
-import Card from './Card';
-import Button from './Button';
+import Card from './components/Card';
+import Button from './components/Button';
 import { Projects } from './Projects';
 import melody from './assets/melody.jpg';
 import rentie from './assets/rentie.jpg';
 import profile from './assets/profile.jpg';
 import Fade from 'react-reveal/Fade';
+import Footer from './components/Footer';
+
 
 
 function App() {
@@ -38,33 +39,18 @@ function App() {
         </section>
         <section className='tc pa3' id='cards-div'>
           <Fade bottom>
-            <Card name={Projects[0].name} description={Projects[0].description} image={melody} />
+            <Card name={Projects[0].name} description={Projects[0].description} />
           </Fade>
           <Fade bottom>
             <Card name={Projects[1].name} description={Projects[1].description} image={rentie} />
           </Fade>
         </section>
-          <Particles
-            params={{
-              particles: {
-                number: {
-                  value: 400,
-                density: {
-                  enable: true,
-                  value_area: 900,
-                }
-              },
-              color: {
-                value: '#61dafb',
-              },
-              line_linked: {
-            color: '#61dafb',
-            opacity: 1
-          }
-            },
-            z_index: -10,
-          }}
-          />
+        <section>
+        <Fade left>
+          Contact Me
+        </Fade>
+        </section>
+      <Footer></Footer>
     </div>
 
   );

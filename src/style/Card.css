@@ -1,0 +1,26 @@
+#cards {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-size: cover;
+  background-image: url('../assets/melody.jpg');
+
+}
+
+/*#cards img {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  z-index: 4;
+}*/
+
+#cards img:hover {
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+   transform: translate(300px, 0px);
+}
+
+#cards #text:hover {
+  transform: translate(-300px, 0px);
+}
+
