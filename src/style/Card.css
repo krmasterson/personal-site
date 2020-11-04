@@ -1,26 +1,47 @@
 #cards {
-  margin: 50px;
+  margin: 50px 0;
   display: flex;
-  justify-content: center;
-  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-size: cover;
-  background-image: url('../assets/melody.jpg');
-
+  height: auto;
 }
 
-/*#cards img {
-  position: absolute;
-  top: 0;
-  width: 50%;
-  z-index: 4;
-}*/
-
-#cards img:hover {
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-   transform: translate(300px, 0px);
+#text {
+  width: auto;
+  max-width: 75%
 }
 
-#cards #text:hover {
-  transform: translate(-300px, 0px);
+#text h2 {
+  text-align: center;
 }
 
+#cards img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+  padding: 0;
+}
+
+#cards p {
+  font-size: 1.5vw;
+}
+
+.Tilt {
+  width: 55% !important;
+  height: auto !important;
+}
+
+.Tilt-inner {
+  width: 100% !important;
+}
+
+#text button {
+  background-image: linear-gradient(to right, #02aab0 25%, #00cdac 50%, white 0%);
+  border: 2.5px solid;
+  padding: 5px 10px;
+}
+
+#cards button p {
+  font-size: 1rem;
+}

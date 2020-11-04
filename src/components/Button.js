@@ -11,7 +11,7 @@ const Button = ({
 
   return (
     <button onClick={onClick} type={type}>
-      {children}
+      <p>{children}</p>
     </button>
     )
 }
