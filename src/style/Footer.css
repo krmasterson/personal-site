@@ -26,6 +26,10 @@
   font-size: 50px;
 }
 
+#footer a :hover {
+  color: #14A392;
+}
+
 #caption {
   color: white;
   font-size: 15px;

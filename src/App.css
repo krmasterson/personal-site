@@ -6,8 +6,6 @@ body {
 
 .content, h1 {
   color: #263868;
-  font-size: 3.5rem !important;
-  font-weight: 700 !important;
 }
 
 #hero {
@@ -16,58 +14,41 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  padding: 0rem 2.6rem;
+  padding: 0rem 3rem;
   margin-bottom: 0;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: -1;
-
   background: url("https://images.unsplash.com/reserve/aOcWqRTfQ12uwr3wWevA_14401305508_804b300054_o.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=1655&q=80");
   background-position: center;
   background-size: cover;
+}
 
-  .hero-title {
-    font-size: 5.6rem;
-    font-weight: 700!important;
-    margin-bottom: 3.2rem;
-    text-align: left;
-    visibility: visible;
-    opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.5s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.5s;
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700!important;
+  margin-bottom: 3.2rem;
+  text-align: left;
+  visibility: visible;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.5s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.5s;
 
-    @include respond(tab-land) {
-      font-size: 4rem;
-    }
-    @include respond(tab-port) {
-      font-size: 3.6rem;
-      text-align: center;
-    }
-    @include respond(phone) {
-      font-size: 3.5rem;
-      line-height: 1.5;
-    }
-    @include respond(phone-xs) {
-      font-size: 2.8rem;
-    }
+  @include respond(tab-land) {
+    font-size: 4rem;
   }
-
-  .hero-cta {
-    display: flex;
-
-    @include respond(tab-port) {
-      justify-content: center;
-    }
-
-    & a {
-      font-size: 2.4rem;
-
-      @include respond(phone) {
-        font-size: 2rem;
-      }
-    }
+  @include respond(tab-port) {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+  @include respond(phone) {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  @include respond(phone-xs) {
+    font-size: 2.8rem;
   }
 }
 
@@ -87,9 +68,9 @@ a:hover {
 
 #about {
   background: linear-gradient(to right, #282442 0%, #00cdac 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
   height: 100%;
-  padding: 2rem 0rem 5rem 0rem;
+  padding: 2rem 0rem 7rem 0rem;
 }
 
 #about img {
@@ -104,38 +85,57 @@ a:hover {
   align-items: center;
 }
 
+#about-me-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  color: white;
+}
+
+#about-me-text button {
+  background: transparent;
+  color: white;
+  border: 3px solid white;
+}
+
+#about-me-text button:hover {
+  background-color: white;
+  color: #199387;
+  border-color: #199387;
+  transition: .9s;
+}
+
 #about h1 {
-  font-size: 5vw !important;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .about-me p {
-  width: 50%;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 #contact {
   background: linear-gradient(to right, #282442 0%, #00cdac 100%);
-  clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
-  padding: 5rem;
+  clip-path: polygon(0 45%, 100% 0, 100% 100%, 0 100%);
+  padding: 150px 0 20px 0;
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #contact h1 {
   color: white;
+  margin: 0 !important;
 }
 
 #cards-div h1 {
   text-align: center;
+  margin: 0;
 }
 
 #contact button {
   background: transparent;
   color: white;
   border: 3px solid white;
+  margin-top: 35px;
 }
 
 #contact button:hover {
@@ -145,8 +145,96 @@ a:hover {
   transition: .9s;
 }
 
-#contact-me {
-  width: 40%;
-  text-align: center;
-  margin-bottom: 25px;
+#contact-inner {
+  margin: 100px 0 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+#contact-me {
+  width: 60%;
+  text-align: center;
+  margin-top: 35px;
+}
+
+#card1 {
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%) !important;
+  padding: 175px 0 175px 15px;
+  background-color: lightgrey;
+}
+
+#card2 {
+  padding: 175px 0 175px 15px !important;
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%) !important;
+  background-color: lightgrey;
+}
+
+p {
+  margin-bottom: 0.7rem !important;
+}
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 70px !important;
+  }
+  .content h1 {
+    font-size: 80px !important;
+  }
+  h3 {
+    font-size: 35px !important;
+  }
+  p {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 30px !important;
+  }
+  .content h1 {
+    font-size: 50px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 8px !important;
+  }
+  #card1 {
+    padding: 90px 0 90px 0 !important;
+  }
+  #card2 {
+    padding: 90px 0 90px 0 !important;
+  }
+  #contact {
+    padding: 50px 0 20px 0 !important;
+  }
+  #footer-logo {
+    font-size: 20px !important;
+  }
+  #cards img {
+    margin: 0 !important;
+  }
+  #card-inner {
+    margin: 80px 0 5px 0 !important;
+  }
+  #contact-me {
+    margin-top: 15px;
+  }
+  #contact button {
+    margin-top: 15px;
+    padding: 5px 10px 5px 10px;
+    border-width: 2px;
+  }
+  #contact button p {
+    font-size: 12px !important;
+  }
+}
+
+button p {
+  margin-bottom: 0 !important;
+}
+
+
