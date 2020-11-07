@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div id="footer">
       <div id='carat'>
-        <a href='#hero'><p><FaAngleUp /></p></a>
+        <a href='#main'><p><FaAngleUp /></p></a>
       </div>
       <div id='footer-inner'>
         <a href='https://github.com/krmasterson'><p><FaGithubSquare id='footer-logo' /></p></a>

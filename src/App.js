@@ -14,10 +14,10 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-        <div id="hero" className="jumbotron">
+        <div id="main" className="jumbotron">
           <Fade right>
           <div className="content">
-            <h1 className="hero-title load-hidden">
+            <h1 className="main-title load-hidden">
               Hi, i'm <span className="text-color-main">Kyle</span>.
               <br />
               The Developer you <span className="text-color-main">need</span>.
@@ -34,7 +34,6 @@ function App() {
             <div id='about-me-text'>
               <p>After working in construction for over 5 years I decided a career change was necessary. With some past coding experience I chose to dive in feet first and attending a coding bootcamp. After countless hours of research I applied to; and was accepted into, Le Wagon's Full Stack Web Development Course, Course Report's highest rated coding bootcamp. </p>
               <p>I am now looking for a position which will allow me to continue learning and hone my skills as a developer. I am interested in freelance, contract, and full time opportunities.</p>
-              <Button>Resume</Button>
             </div>
           </div>
           </Fade>
@@ -45,7 +44,7 @@ function App() {
           </Fade>
           <Fade bottom>
             <div id='card1'>
-              <Card name={Projects[0].name} description={Projects[0].description} image={melody} />
+              <Card name={Projects[0].name} description={Projects[0].description} image={melody} link={Projects[0].link} login={Projects[0].login}/>
             </div>
           </Fade>
           <Fade bottom>
