@@ -4,7 +4,7 @@ import Tilt from 'react-tilt'
 import Button from './Button';
 
 
-const Card = ({ name, description, image}) => {
+const Card = ({ name, description, image, login, link}) => {
   return (
     <div id='cards'>
       <div id='card-inner'>
@@ -16,7 +16,8 @@ const Card = ({ name, description, image}) => {
           <div className='br3 pa3 bw2 col-lg-4 col-sm-12' id='text'>
             <h3>{name}</h3>
             <p>{description}</p>
-            <Button>View Live</Button>
+            <p>{login}</p>
+            <a href={link}><Button>View Live</Button></a>
           </div>
       </div>
     </div>

@@ -50,7 +50,7 @@ function App() {
           </Fade>
           <Fade bottom>
             <div id='card2'>
-              <Card id='card2' name={Projects[1].name} description={Projects[1].description} image={rentie} />
+              <Card id='card2' name={Projects[1].name} description={Projects[1].description} image={rentie} link={Projects[1].link} login={Projects[1].login}/>
             </div>
           </Fade>
         </section>
