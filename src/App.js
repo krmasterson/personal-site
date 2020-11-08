@@ -8,7 +8,6 @@ import rentie from './assets/rentie.jpeg';
 import profile from './assets/profile.jpeg';
 import Fade from 'react-reveal/Fade';
 import Footer from './components/Footer';
-import imageCompression from 'browser-image-compression';
 
 function App() {
   return (
