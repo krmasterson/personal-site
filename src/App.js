@@ -3,13 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from './components/Card';
 import Button from './components/Button';
 import { Projects } from './Projects';
-import melody from './assets/melody.jpg';
-import rentie from './assets/rentie.jpg';
-import profile from './assets/profile.jpg';
+import melody from './assets/melody.jpeg';
+import rentie from './assets/rentie.jpeg';
+import profile from './assets/profile.jpeg';
 import Fade from 'react-reveal/Fade';
 import Footer from './components/Footer';
-
-
+import imageCompression from 'browser-image-compression';
 
 function App() {
   return (
