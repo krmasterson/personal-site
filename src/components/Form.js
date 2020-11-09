@@ -17,10 +17,10 @@ class Form extends React.Component {
       e.preventDefault();
       axios({
         method: "POST",
-        url:"https://kylemasterson.com/#about",
+        url:"/sendrequest/",
         data:  this.state,
         validateStatus: (status) => {
-        return true; // I'm always returning true, you may want to do it depending on the status received
+        return true;
       },
       }).then((response)=>{
         if (response.data.status === 'success') {
