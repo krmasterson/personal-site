@@ -2,7 +2,7 @@ export const Projects = [
   {
     name: 'Melody',
     description: 'My team and I built Melody during a one week design sprint. It is an instrument rental app. Users are able to filter by instrument, create a new listing, see the geographic location of any listing, and book an instrument rental for a specified period of time. Melody is built using Ruby on Rails, Javascript, PostgreSQL, CSS, and HTML.',
-    link: 'https://melody-airbnb-clone.herokuapp.com/',
+    link: 'https://airbnb-meaagan.herokuapp.com/',
     login: 'username: meagan@email.com password: 123456'
   },
   {

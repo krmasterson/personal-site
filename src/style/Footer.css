@@ -27,10 +27,11 @@
 }
 
 #footer a :hover {
-  color: #14DCD7;
+  color: #24828E;
 }
 
-#caption {
+#caption p {
   color: white;
   font-size: 15px;
+  margin-bottom: 0 !important;
 }

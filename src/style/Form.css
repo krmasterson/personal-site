@@ -1,0 +1,34 @@
+.form {
+  width: 50%;
+}
+
+#form-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 0.5rem !important;
+}
+
+label p {
+  margin-bottom: 0 !important;
+  font-size: 20px;
+}
+#line-one-width {
+  width: 48%;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inner-form {
+  width: 100%;
+}
+/*#form-name .form-control {
+  width: 50% !important;
+}
+*/

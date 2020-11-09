@@ -8,6 +8,7 @@ import rentie from './assets/rentie.jpeg';
 import profile from './assets/profile.jpeg';
 import Fade from 'react-reveal/Fade';
 import Footer from './components/Footer';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -15,11 +16,16 @@ function App() {
         <div id="main" className="jumbotron">
           <Fade right>
           <div className="content">
-            <h1 className="main-title load-hidden">
-              Hi, i'm <span className="text-color-main">Kyle</span>.
-              <br />
-              The Developer you <span className="text-color-main">need</span>.
-            </h1>
+            <div>
+              <h1 className="main-title load-hidden">
+                Hi, i'm <span className="text-color-main">Kyle</span>.
+              </h1>
+            </div>
+            <div id='second-line'>
+              <h1>
+                I'm a <span className="text-color-main">Designer</span> / <span className="text-color-main">Front-end Developer</span> from the NYC area.
+              </h1>
+            </div>
             <a href='#about'><Button>Discover More</Button></a>
           </div>
           </Fade>
@@ -30,7 +36,7 @@ function App() {
           <div className='about-me'>
             <img src={profile} alt="Profile" />
             <div id='about-me-text'>
-              <p>After working in construction for over 5 years I decided a career change was necessary. With some past coding experience I chose to dive in feet first and attending a coding bootcamp. After countless hours of research I applied to; and was accepted into, Le Wagon's Full Stack Web Development Course, Course Report's highest rated coding bootcamp. </p>
+              <p>After working in construction for over 5 years I decided a career change was necessary. With some past coding experience I chose to dive in head first and attend a coding bootcamp. After countless hours of research I applied and was accepted into Le Wagon's Full Stack Web Development Course; Course Report's highest rated coding bootcamp. </p>
               <p>I am now looking for a position which will allow me to continue learning and hone my skills as a developer. I am interested in freelance, contract, and full time opportunities.</p>
             </div>
           </div>
@@ -51,13 +57,18 @@ function App() {
             </div>
           </Fade>
         </section>
-        <br />
-        <section id='contact'>
+        <Fade left>
+            <h1 id='contact-title'>Contact</h1>
+          </Fade>
+          <section id='contact'>
         <Fade left>
         <div id='contact-inner'>
-          <h1>Contact</h1>
-          <p id='contact-me'>If you have a vision in mind that you would like to turn into a reality or an employment opportunity please click the button below to get in touch with me.</p>
-          <a href='mailto:kylemasterson25@gmail.com' id='contact-btn'><Button>Contact Me</Button></a>
+          <div id='contact-content'>
+            <div id='contact-me'>
+              <p>If you have a personal vision in mind that you would like to turn into a reality or an employment opportunity, please fill out the form below to get in touch with me.</p>
+            </div>
+            <Form />
+          </div>
         </div>
         </Fade>
         </section>
