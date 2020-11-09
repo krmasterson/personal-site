@@ -17,7 +17,7 @@ class Form extends React.Component {
       e.preventDefault();
       axios({
         method: "POST",
-        url:"/#conact",
+        url:"/#about",
         data:  this.state,
         validateStatus: (status) => {
         return true;
