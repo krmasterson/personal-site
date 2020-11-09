@@ -17,7 +17,7 @@ class Form extends React.Component {
       e.preventDefault();
       axios({
         method: "POST",
-        url:"http://localhost:3002/send",
+        url:"https://kylemasterson.com/#about",
         data:  this.state,
         validateStatus: (status) => {
         return true; // I'm always returning true, you may want to do it depending on the status received
