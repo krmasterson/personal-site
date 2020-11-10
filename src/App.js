@@ -8,7 +8,7 @@ import rentie from './assets/rentie.jpeg';
 import profile from './assets/profile.jpeg';
 import Fade from 'react-reveal/Fade';
 import Footer from './components/Footer';
-import Form from './components/Form';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -66,8 +66,9 @@ function App() {
           <div id='contact-content'>
             <div id='contact-me'>
               <p>If you have a personal vision in mind that you would like to turn into a reality or an employment opportunity, please fill out the form below to get in touch with me.</p>
+
             </div>
-            <Form />
+            <Contact></Contact>
           </div>
         </div>
         </Fade>
