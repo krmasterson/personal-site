@@ -10,7 +10,8 @@ export default function Contact() {
 
     emailjs.sendForm('default_service', 'template_vj1r2qy', e.target, 'user_27uUdjPhwH9P0Nd1lUDmS')
       .then((result) => {
-          console.log(result.text);
+          document.getElementById('my-form').reset();
+          window.alert("Thank you for your interest. I'll respond as soon as possible.");
       }, (error) => {
           console.log(error.text);
       });

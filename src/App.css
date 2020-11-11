@@ -271,6 +271,7 @@ p {
   }
   textarea {
     height: 2.5rem !important;
+    font-size: 10px !important;
   }
 }
 
