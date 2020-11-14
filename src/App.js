@@ -18,7 +18,7 @@ function App() {
           <div className="content">
             <div>
               <h1 className="main-title load-hidden">
-                Hi, i'm <span className="text-color-main">Kyle</span>.
+                Hi, I'm <span className="text-color-main">Kyle</span>.
               </h1>
             </div>
             <div id='second-line'>
