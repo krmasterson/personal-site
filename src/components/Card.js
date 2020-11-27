@@ -14,7 +14,7 @@ const Card = ({ name, description, image, login, link}) => {
               <img className='col-lg-8 col-sm-12'alt='project' src={image} />
             </div>
           </div>
-          <div className='br3 pa3 bw2 col-lg-4 col-sm-12' id='text'>
+          <div className='br3 bw2 col-lg-4 col-sm-12' id='text'>
             <h3>{name}</h3>
             <p>{description}</p>
             <p>{login}</p>

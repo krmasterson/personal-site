@@ -9,7 +9,8 @@
 
 #text {
   width: auto;
-  max-width: 75%
+  max-width: 75%;
+  padding: 1rem;
 }
 
 #text h3 {
@@ -31,6 +32,8 @@
 .Tilt {
   width: 55% !important;
   height: auto !important;
+  display: flex;
+  align-items: center;
 }
 
 .Tilt-inner {
