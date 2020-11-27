@@ -89,6 +89,7 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #about-me-text {
@@ -219,6 +220,12 @@ p {
   }
   #main button p {
     font-size: 18px !important;
+  }
+  #about img {
+    width: 30%;
+  }
+  #about-me-text {
+    width: 80% !important;
   }
   #card1 {
     padding: 90px 0 90px 0 !important;
