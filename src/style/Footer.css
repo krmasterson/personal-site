@@ -1,5 +1,5 @@
 #footer {
-  background: gray;
+  background: linear-gradient(90deg,#282442 0,#03b6bd);
   color: white;
   display: flex;
   justify-content: center;
@@ -7,13 +7,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 10px;
-}
-
-#carat {
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: -10px;
+  margin-top: -1px;
 }
 
 #footer-inner {
@@ -28,7 +22,7 @@
 }
 
 #footer a :hover {
-  color: #13DDD7;
+  color: #03b6bd;
 }
 
 #caption p {

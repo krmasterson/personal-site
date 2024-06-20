@@ -1,16 +1,16 @@
 button {
-  color: #03BDAE;
+  color: #03b6bd;
   font-weight: bold;
   border-width: 3px;
-  -webkit-border-image: linear-gradient(135deg, #282442 0%, #03BDAE 100%);;
-  border-image: linear-gradient(135deg, #282442 0%, #03BDAE 100%);
+  -webkit-border-image: linear-gradient(135deg, #282442 0%, #03b6bd 100%);;
+  border-image: linear-gradient(135deg, #282442 0%, #03b6bd 100%);
   border-image-slice: 1;
   border-radius: 0px;
   font-size: 30px !important;
   padding: 8px 25px 8px 25px;
   text-decoration: none;
   font-weight: 700 !important;
-  background-image: linear-gradient(to right, #282442 25%, #03BDAE 50%, #E8E3E7 0%);
+  background-image: linear-gradient(to right, #282442 25%, #03b6bd 50%, #cecacd 0%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .5s ease-out;
@@ -19,7 +19,7 @@ button {
 button:hover {
   color: white;
   transition: 0.5s;
-  border-color: #03BDAE;
+  border-color: #03b6bd;
   background-position: left bottom;
 }
 

@@ -22,19 +22,21 @@ function App() {
               </h1>
             </div>
             <div id='second-line'>
-              <h1>
+              <h2>
                 I'm a <span className="text-color-main">Designer</span> / <span className="text-color-main">Front-end Developer</span> from the NYC area.
-              </h1>
+              </h2>
             </div>
-            <a href='#about'><Button>Discover More</Button></a>
+            <a href='#about'>
+              <Button>Discover More</Button>
+            </a>
           </div>
           </Fade>
         </div>
         <div id='about' className='tc'>
           <Fade left>
-          <h1 className='tc white ma0'>About Me</h1>
+          <h3 className='tc white ma0'>About Me</h3>
           <div className='about-me'>
-            <img src={profile} alt="Profile" />
+            <img loading="lazy"  src={profile} alt="Profile" />
             <div id='about-me-text'>
               <p>After working in construction for over 5 years I decided a career change was necessary. With some past coding experience I chose to dive in head first and attend a coding bootcamp. After countless hours of research I applied and was accepted into Le Wagon's Full Stack Web Development Course; Course Report's highest rated coding bootcamp. </p>
               <p>I am now looking for a position which will allow me to continue learning and hone my skills as a developer. I am interested in freelance, contract, and full time opportunities.</p>
@@ -44,7 +46,7 @@ function App() {
         </div>
         <section id='cards-div'>
           <Fade bottom>
-            <h1>Projects</h1>
+            <h3>Projects</h3>
           </Fade>
           <Fade bottom>
             <div id='card1'>
@@ -58,7 +60,7 @@ function App() {
           </Fade>
         </section>
         <Fade left>
-            <h1 id='contact-title'>Contact</h1>
+            <h3 id='contact-title'>Contact</h3>
           </Fade>
           <section id='contact'>
         <Fade left>

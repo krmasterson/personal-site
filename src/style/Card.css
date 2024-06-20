@@ -15,14 +15,26 @@
 
 #text h3 {
   text-align: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 10px;
 }
+
+#cards-div h3 {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  font-weight: 600;
+}
+
 
 #cards img {
   max-width: 100%;
   height: auto;
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
   padding: 0;
-  margin: 15px 0 0 15px;
+  margin: 20px 0 5px 0;
+  width: 75%;
 }
 
 #cards p {
@@ -38,16 +50,30 @@
 
 .Tilt-inner {
   width: 100% !important;
+  text-align: center;
 }
 
 #text button {
-  background-image: linear-gradient(to right, #282442 25%, #03BDAE 50%, lightgrey 0%);
+  background-image: linear-gradient(to right, #282442 25%, #03b6bd 50%, lightgrey 0%);
   border: 2.5px solid;
   padding: 5px 10px;
-  border-color: #04AAB0;
+  border-color: #03b6bd;
 }
 
 #cards button p {
   font-size: 1rem;
 }
 
+@media screen and (max-width: 800px) {
+  #cards img {
+    width: 100%;
+  }
+  #card-inner .Tilt {
+    width: 80% !important;
+  }
+  #cards-div h3 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+}

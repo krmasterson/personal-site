@@ -11,15 +11,23 @@ const Footer = () => {
   return (
     <div id="footer">
       <div id='carat'>
-        <a href='#main'><p><FaAngleUp /></p></a>
+        <a href='#main' title="Return to top">
+          <p><FaAngleUp /></p>
+        </a>
       </div>
       <div id='footer-inner'>
-        <a href='https://github.com/krmasterson'><p><FaGithubSquare id='footer-logo' /></p></a>
-        <a href='mailto:kylemasterson25@gmail.com'><p><FaRegEnvelope id='footer-logo' /></p></a>
-        <a href='https://www.linkedin.com/in/kyle-masterson438/'><p><FaLinkedin id='footer-logo' /></p></a>
+        <a href='https://github.com/krmasterson'>
+          <p title="Email Logo"><FaGithubSquare id='footer-logo' /></p>
+        </a>
+        <a href='mailto:kylemasterson25@gmail.com'>
+          <p title="Email Logo"><FaRegEnvelope id='footer-logo' /></p>
+        </a>
+        <a href='https://www.linkedin.com/in/kyle-masterson438/'>
+          <p title="Email Logo"><FaLinkedin id='footer-logo' /></p>
+        </a>
       </div>
       <div id='caption'>
-      <p>Built with <FaReact />. Powered by <FaCoffee />.</p>
+        <p>Built with <FaReact />. Powered by <FaCoffee />.</p>
       </div>
     </div>
     )

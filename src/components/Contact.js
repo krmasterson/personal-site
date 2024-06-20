@@ -22,16 +22,16 @@ export default function Contact() {
       <div id='form-inputs'>
         <input type="hidden" name="contact_number" />
         <div className='form-item'>
-          <label>Name</label>
-          <input type="text" name="from_name" required/>
+          <label htmlFor="full-name">Name</label>
+          <input type="text" name="from_name" id="full-name" required/>
         </div>
         <div className='form-item'>
-          <label>Email</label>
-          <input type="email" name="from_email" required/>
+          <label htmlFor="main-email">Email</label>
+          <input type="email" name="from_email" id="main-email" required/>
         </div>
         <div className='form-item'>
-          <label>Message</label>
-          <textarea name="message" required/>
+          <label htmlFor="main-message">Message</label>
+          <textarea name="message" id="main-message" required/>
         </div>
       </div>
       <button type='submit' value='Send' id='launch' display='hidden'>Submit</button>
@@ -39,3 +39,7 @@ export default function Contact() {
   );
 
 }
+
+
+
+
