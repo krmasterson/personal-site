@@ -16,7 +16,7 @@
     "bootstrap": "^5.3.3",
     "browser-image-compression": "^1.0.12",
     "emailjs-com": "^2.6.3",
-    "node-sass": "^9.0.0",
+    "node-sass": "^8.0.0",
     "react": "^16.0.0",
     "react-bootstrap": "^2.10.2",
     "react-device-detect": "^2.2.3",
