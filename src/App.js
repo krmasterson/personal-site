@@ -6,7 +6,7 @@ import { Projects } from './Projects';
 import melody from './assets/melody.jpeg';
 import rentie from './assets/rentie.jpeg';
 import profile from './assets/profile.jpeg';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 
